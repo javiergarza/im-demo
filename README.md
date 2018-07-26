@@ -60,6 +60,10 @@ This policy showcases a conditional transformation. It automatically detects and
 
 For example if my pristine image is [https://developer.akamai.com/image-manager/img/gallery-1.jpg](https://developer.akamai.com/image-manager/img/gallery-1.jpg) (a high quality stock image in portrait mode), by applying the query-string `?impolicy=conditional-orientation`: [https://developer.akamai.com/image-manager/img/gallery-1.jpg?impolicy=conditional-orientation](https://developer.akamai.com/image-manager/img/gallery-1.jpg?impolicy=conditional-orientation) the resulting image won't be rotated because the pristine image is not in landscape mode. However if we try the same policy on an image that is in landscape mode like [https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg](https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg) we will see it rotated. Click [https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg?impolicy=conditional-orientation](https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg?impolicy=conditional-orientation) to see the resulting image 
 
+## Piez
+
+Piez is a Google Chrome extension that is very useful for debugging and estimating the value provided by Image Manager and a few other Akamai features. You can find Piez in the [Google Chrome Store](http://bit.ly/2LQbLpG)
+
 ## Image Manager sample API commands
 
 In the examples below we use HTTPie (http), and it's edgegrid extension: a very useful CLI tool to explore APIs. Another tool mentioned below is jq, which is another CLI tool that will help us filter and format JSON. See [this Blog](http://bit.ly/2Odo1lA) for instructions on how to install and use HTTPie and jq
