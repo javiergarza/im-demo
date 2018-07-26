@@ -13,6 +13,40 @@ You also need to know the name of the Image Manager Policy Set (also known as "A
 * Property Manager: The Property Manager behavior on the Akamai Property Manager for developer.akamai.com looks like this: [Image Manager Property Manager Behavior on developer.akamai.com](images/DAC-IM-behavior.png)
 * Image Manager Policy Manager: The Policy Manager for developer.akamai.com looks like this: [Image Manager Property Manager Behavior on developer.akamai.com](images/DAC-IM-policy-manager.png)
 
+## Example URLs
+
+### Resize using manual hints 
+* Pristine: https://developer.akamai.com/image-manager/img/gallery-1.jpg
+* Optimized: https://developer.akamai.com/image-manager/img/gallery-1.jpg?imwidth=500 
+
+### Auto-crop to face and render in black and white 
+* Pristine: https://developer.akamai.com/image-manager/img/gallery-1.jpg
+* Optimized: https://developer.akamai.com/image-manager/img/gallery-1.jpg?impolicy=filter
+
+### Add watermark
+* Pristine: https://developer.akamai.com/image-manager/img/gallery-1.jpg
+* Optimized: https://developer.akamai.com/image-manager/img/gallery-1.jpg?impolicy=watermark
+
+### Create letterbox effect
+* Pristine: https://developer.akamai.com/image-manager/img/gallery-1.jpg
+* Optimized: https://developer.akamai.com/image-manager/img/gallery-1.jpg?impolicy=conditional-letterbox
+
+### Rotate 90 degrees images in landscape mode
+* Pristine in portrait: https://developer.akamai.com/image-manager/img/gallery-1.jpg
+* Optimized: https://developer.akamai.com/image-manager/img/gallery-1.jpg?impolicy=conditional-orientation
+
+* Pristine in landscape: https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg
+* Optimized: https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg?impolicy=conditional-orientation
+ 
+### Resize to 500 pixels while maintaining aspect ratio, and compress image with perceptual quality 
+* Pristine: https://developer.akamai.com/image-manager/img/gallery-1.jpg
+* Optimized: https://developer.akamai.com/image-manager/img/gallery-1.jpg?impolicy=resize&width=500
+
+### Dynamic crop 
+* Pristine: https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg
+* Optimized: https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg?impolicy=crop&width=160&height=180&y=70&x=700
+
+
 ## Sample JSON IM policy Files
 
 ### [dacimg_crop.json](json/dacimg_crop.json)
