@@ -1,0 +1,26 @@
+{
+  "id": "filter",
+  "isOlderPolicy": false,
+  "version": 3,
+  "dateCreated": "2018-06-28 19:16:17+0000",
+  "user": "dshafik",
+  "transformations": [
+    {
+      "transformation": "FaceCrop",
+      "focus": "biggestFace",
+      "padding": 0.2
+    },
+    {
+      "transformation": "Resize",
+      "type": "normal",
+      "aspect": "ignore",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "transformation": "Grayscale"
+    }
+  ],
+  "output": {},
+  "video": false
+}

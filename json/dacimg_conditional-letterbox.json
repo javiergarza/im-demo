@@ -1,0 +1,31 @@
+{
+  "id": "conditional-letterbox",
+  "isOlderPolicy": false,
+  "version": 1,
+  "dateCreated": "2018-07-26 00:09:23+0000",
+  "user": "jgarza",
+  "transformations": [
+    {
+      "transformation": "IfOrientation",
+      "portrait": {
+        "transformation": "Compound",
+        "transformations": [
+          {
+            "transformation": "FitAndFill",
+            "width": 300,
+            "height": 300
+          }
+        ]
+      },
+      "landscape": {
+        "transformation": "FitAndFill",
+        "width": 300,
+        "height": 300
+      }
+    }
+  ],
+  "output": {
+    "perceptualQuality": "mediumHigh"
+  },
+  "video": false
+}

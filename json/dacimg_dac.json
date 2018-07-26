@@ -1,0 +1,20 @@
+{
+  "id": "dac",
+  "isOlderPolicy": false,
+  "version": 1,
+  "dateCreated": "2018-04-18 14:43:07+0000",
+  "user": "maboulma",
+  "breakpoints": {},
+  "output": {
+    "perceptualQuality": "mediumHigh",
+    "allowedFormats": [
+      "webp",
+      "jpeg",
+      "png",
+      "jpeg2000",
+      "jpegxr",
+      "gif"
+    ]
+  },
+  "video": false
+}

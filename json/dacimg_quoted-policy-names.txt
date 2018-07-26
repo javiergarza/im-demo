@@ -1,0 +1,8 @@
+".auto"
+"conditional-letterbox"
+"conditional-orientation"
+"crop"
+"dac"
+"filter"
+"resize"
+"watermark"

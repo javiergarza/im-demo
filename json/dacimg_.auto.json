@@ -1,0 +1,20 @@
+{
+  "id": ".auto",
+  "isOlderPolicy": false,
+  "version": 2,
+  "dateCreated": "2017-11-30 00:03:33+0000",
+  "user": "dshafik",
+  "breakpoints": {},
+  "output": {
+    "perceptualQuality": "mediumHigh",
+    "allowedFormats": [
+      "jpeg",
+      "png",
+      "webp",
+      "jpeg2000",
+      "jpegxr",
+      "gif"
+    ]
+  },
+  "video": false
+}

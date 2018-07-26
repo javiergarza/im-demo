@@ -1,0 +1,233 @@
+{
+  "itemKind": "JSONNODE",
+  "items": [
+    {
+      "id": ".auto",
+      "isOlderPolicy": false,
+      "version": 2,
+      "dateCreated": "2017-11-30 00:03:33+0000",
+      "user": "dshafik",
+      "breakpoints": {},
+      "output": {
+        "perceptualQuality": "mediumHigh",
+        "allowedFormats": [
+          "webp",
+          "jpeg",
+          "gif",
+          "jpeg2000",
+          "jpegxr",
+          "png"
+        ]
+      },
+      "video": false
+    },
+    {
+      "id": "conditional-letterbox",
+      "isOlderPolicy": false,
+      "version": 1,
+      "dateCreated": "2018-07-26 00:09:23+0000",
+      "user": "jgarza",
+      "transformations": [
+        {
+          "transformation": "IfOrientation",
+          "portrait": {
+            "transformation": "Compound",
+            "transformations": [
+              {
+                "transformation": "FitAndFill",
+                "width": 300,
+                "height": 300
+              }
+            ]
+          },
+          "landscape": {
+            "transformation": "FitAndFill",
+            "width": 300,
+            "height": 300
+          }
+        }
+      ],
+      "output": {
+        "perceptualQuality": "mediumHigh"
+      },
+      "video": false
+    },
+    {
+      "id": "conditional-orientation",
+      "isOlderPolicy": false,
+      "version": 1,
+      "dateCreated": "2018-07-25 22:14:55+0000",
+      "user": "jgarza",
+      "transformations": [
+        {
+          "transformation": "IfOrientation",
+          "landscape": {
+            "transformation": "Rotate",
+            "degrees": 90
+          }
+        }
+      ],
+      "output": {
+        "perceptualQuality": "mediumHigh"
+      },
+      "video": false
+    },
+    {
+      "id": "crop",
+      "isOlderPolicy": false,
+      "version": 1,
+      "dateCreated": "2018-04-18 15:28:10+0000",
+      "user": "maboulma",
+      "variables": [
+        {
+          "name": "width",
+          "type": "number",
+          "defaultValue": "600"
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "defaultValue": "400"
+        },
+        {
+          "name": "x",
+          "type": "number",
+          "defaultValue": "0"
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "defaultValue": "0"
+        }
+      ],
+      "transformations": [
+        {
+          "gravity": "NorthWest",
+          "transformation": "Crop",
+          "height": {
+            "var": "height"
+          },
+          "width": {
+            "var": "width"
+          },
+          "allowExpansion": false,
+          "xPosition": {
+            "var": "x"
+          },
+          "yPosition": {
+            "var": "y"
+          }
+        }
+      ],
+      "output": {
+        "perceptualQuality": "mediumHigh"
+      },
+      "video": false
+    },
+    {
+      "id": "dac",
+      "isOlderPolicy": false,
+      "version": 1,
+      "dateCreated": "2018-04-18 14:43:07+0000",
+      "user": "maboulma",
+      "breakpoints": {},
+      "output": {
+        "perceptualQuality": "mediumHigh",
+        "allowedFormats": [
+          "webp",
+          "jpeg",
+          "gif",
+          "jpegxr",
+          "jpeg2000",
+          "png"
+        ]
+      },
+      "video": false
+    },
+    {
+      "id": "filter",
+      "isOlderPolicy": false,
+      "version": 3,
+      "dateCreated": "2018-06-28 19:16:17+0000",
+      "user": "dshafik",
+      "transformations": [
+        {
+          "transformation": "FaceCrop",
+          "focus": "biggestFace",
+          "padding": 0.2
+        },
+        {
+          "transformation": "Resize",
+          "type": "normal",
+          "aspect": "ignore",
+          "width": 1000,
+          "height": 1000
+        },
+        {
+          "transformation": "Grayscale"
+        }
+      ],
+      "output": {},
+      "video": false
+    },
+    {
+      "id": "resize",
+      "isOlderPolicy": false,
+      "version": 2,
+      "dateCreated": "2018-04-25 15:42:51+0000",
+      "user": "maboulma",
+      "variables": [
+        {
+          "name": "width",
+          "type": "number",
+          "defaultValue": "99999"
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "defaultValue": "99999"
+        }
+      ],
+      "transformations": [
+        {
+          "transformation": "Resize",
+          "type": "downsize",
+          "aspect": "fit",
+          "width": {
+            "var": "width"
+          },
+          "height": {
+            "var": "height"
+          }
+        }
+      ],
+      "output": {
+        "perceptualQuality": "mediumHigh"
+      },
+      "video": false
+    },
+    {
+      "id": "watermark",
+      "isOlderPolicy": false,
+      "version": 1,
+      "dateCreated": "2018-07-24 02:17:42+0000",
+      "user": "jgarza",
+      "transformations": [
+        {
+          "transformation": "Composite",
+          "gravity": "NorthWest",
+          "image": {
+            "type": "URL",
+            "url": "https://developer.akamai.com/blog/wp-content/uploads/2016/11/akamai-logo-retina-300x99.png"
+          },
+          "placement": "Over",
+          "scale": 0.2,
+          "scaleDimension": "width"
+        }
+      ],
+      "output": {},
+      "video": false
+    }
+  ],
+  "totalItems": 8
+}

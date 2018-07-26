@@ -1,0 +1,52 @@
+{
+  "id": "crop",
+  "isOlderPolicy": false,
+  "version": 1,
+  "dateCreated": "2018-04-18 15:28:10+0000",
+  "user": "maboulma",
+  "variables": [
+    {
+      "name": "width",
+      "type": "number",
+      "defaultValue": "600"
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "defaultValue": "400"
+    },
+    {
+      "name": "x",
+      "type": "number",
+      "defaultValue": "0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "defaultValue": "0"
+    }
+  ],
+  "transformations": [
+    {
+      "gravity": "NorthWest",
+      "transformation": "Crop",
+      "height": {
+        "var": "height"
+      },
+      "width": {
+        "var": "width"
+      },
+      "allowExpansion": false,
+      "xPosition": {
+        "var": "x"
+      },
+      "yPosition": {
+        "var": "y"
+      }
+    }
+  ],
+  "output": {
+    "perceptualQuality": "mediumHigh"
+  },
+  "video": false
+}

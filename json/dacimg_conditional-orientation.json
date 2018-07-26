@@ -1,0 +1,20 @@
+{
+  "id": "conditional-orientation",
+  "isOlderPolicy": false,
+  "version": 1,
+  "dateCreated": "2018-07-25 22:14:55+0000",
+  "user": "jgarza",
+  "transformations": [
+    {
+      "transformation": "IfOrientation",
+      "landscape": {
+        "transformation": "Rotate",
+        "degrees": 90
+      }
+    }
+  ],
+  "output": {
+    "perceptualQuality": "mediumHigh"
+  },
+  "video": false
+}

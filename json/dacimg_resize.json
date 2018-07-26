@@ -1,0 +1,36 @@
+{
+  "id": "resize",
+  "isOlderPolicy": false,
+  "version": 2,
+  "dateCreated": "2018-04-25 15:42:51+0000",
+  "user": "maboulma",
+  "variables": [
+    {
+      "name": "width",
+      "type": "number",
+      "defaultValue": "99999"
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "defaultValue": "99999"
+    }
+  ],
+  "transformations": [
+    {
+      "transformation": "Resize",
+      "type": "downsize",
+      "aspect": "fit",
+      "width": {
+        "var": "width"
+      },
+      "height": {
+        "var": "height"
+      }
+    }
+  ],
+  "output": {
+    "perceptualQuality": "mediumHigh"
+  },
+  "video": false
+}
