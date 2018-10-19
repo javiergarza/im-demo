@@ -35,16 +35,16 @@ You also need to know the name of the Image Manager Policy Set (also known as "A
 * Pristine in portrait: https://developer.akamai.com/image-manager/img/gallery-1.jpg
 * Optimized: https://developer.akamai.com/image-manager/img/gallery-1.jpg?impolicy=conditional-orientation
 
-* Pristine in landscape: https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg
-* Optimized: https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg?impolicy=conditional-orientation
+* Pristine in landscape: https://developer.akamai.com/sites/default/files/styles/blog_featured_image/public/2018-08/Blog-Webinar-Image-manager-R1.jpg
+* Optimized: https://developer.akamai.com/sites/default/files/styles/blog_featured_image/public/2018-08/Blog-Webinar-Image-manager-R1.jpg?impolicy=conditional-orientation
  
 ### Resize to 500 pixels while maintaining aspect ratio, and compress image with perceptual quality 
 * Pristine: https://developer.akamai.com/image-manager/img/gallery-1.jpg
 * Optimized: https://developer.akamai.com/image-manager/img/gallery-1.jpg?impolicy=resize&width=500
 
 ### Dynamic crop 
-* Pristine: https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg
-* Optimized: https://developer.akamai.com/blog/wp-content/uploads/2018/07/Blog-Webinar-Image-manager-R1.jpg?impolicy=crop&width=160&height=180&y=70&x=700
+* Pristine: https://developer.akamai.com/sites/default/files/styles/blog_featured_image/public/2018-08/Blog-Webinar-Image-manager-R1.jpg
+* Optimized: https://developer.akamai.com/sites/default/files/styles/blog_featured_image/public/2018-08/Blog-Webinar-Image-manager-R1.jpg?impolicy=crop&width=160&height=180&y=70&x=700
 
 
 ## Sample JSON IM policy Files
